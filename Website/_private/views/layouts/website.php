@@ -12,17 +12,45 @@
 	<?php endif; ?>
 </head>
 <body>
-<div class="container">
+<div>
     <header>
-        <h1>Social Responsibility</h1>
+        <div class="item1">
+            <img src="images/logo letters.png">
+        </div>
+        <div class="item2">
+            <nav>
+                <?php if ( $this->section( 'navigation' ) ): ?>
+                    <?php echo $this->section( 'navigation' ) ?>
+                <?php else: ?>
+                    <?php echo $this->fetch( '_navigation' ) ?>
+                <?php endif ?>  
+            </nav>
+        <div class="item3"> 
+
+        </div>
+        <div class="item4"> 
+
+        </div>
+        <div class="item5"> 
+
+        </div>
+        <div class="item6"> 
+
+        </div>
+        <div class="item7"> 
+
+        </div>
+        </div>
+            
+            <nav>
+                <?php if ( $this->section( 'navigation' ) ): ?>
+                    <?php echo $this->section( 'navigation' ) ?>
+                <?php else: ?>
+                    <?php echo $this->fetch( '_navigation' ) ?>
+                <?php endif ?>  
+            </nav>
+            
     </header>
-    <nav>
-		<?php if ( $this->section( 'navigation' ) ): ?>
-			<?php echo $this->section( 'navigation' ) ?>
-		<?php else: ?>
-			<?php echo $this->fetch( '_navigation' ) ?>
-		<?php endif ?>
-    </nav>
     <main>
         <section class="content">
 			<?php echo $this->section( 'content' ) ?>
