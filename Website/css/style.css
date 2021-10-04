@@ -7,8 +7,8 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 20px;
+    grid-gap: 1fr;
     background: #fff;
 }
 
@@ -17,7 +17,10 @@ header {
     background: rgba(244, 250, 255);
     color: #fff;
 }
-
+header img{
+    width: 90px;
+    height: 40px;
+}
 header h1 {
     margin-bottom: 0;
 }
@@ -35,8 +38,6 @@ nav {
 nav ul {
     margin: 0;
     padding: 0;
-    list-style: none;
-
 }
 
 nav ul li {
@@ -45,13 +46,12 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 5px 10px;
-    color: #fff;
-    text-decoration: none;
+    
 }
 
 nav ul li .active, nav ul li a:hover {
     color: rgb(254, 141, 13);
+    text-decoration: none;
     
 }
 
@@ -79,11 +79,7 @@ footer {
 
     header{
         display: grid;
-        grid-template-columns: 200px 1fr 1fr 200px; 
-        grid-template-areas: "item1 item1 item1 item1"
-                             "item2 item3 item3 item4"
-                             "item2 item5 item5 item4"
-                             "item6 item6 item6 item6";
+        grid-template-columns: 20% 80%; 
     }
 
     header img {
@@ -91,13 +87,19 @@ footer {
         height: 50px;
     }
 
-    nav{
-        
-    
-    }
-
     nav ul li a {
         display: inline-block;
+        padding: 5px 10px;
+        color: rgb(30, 7, 160);
+        text-decoration: none;
+        overflow: hidden;
+    }
+    .item{
+        padding: 1px;
+        margin-left: 5px;
+    }
+    .item2{
+        padding: 2px;
     }
 
 }
