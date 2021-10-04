@@ -11,10 +11,20 @@ namespace Website\Controllers;
  *
  */
 class LoginController {
-    
+
     public function login() {
+
 		$template_engine = get_template_engine();
 		echo $template_engine->render('loginpage');
+
 	}
+
+	public function signup() {
+
+		$template_engine = get_template_engine();
+		echo $template_engine->render('signuppage');
+
+	}
+    
 }
 
