@@ -59,7 +59,7 @@ footer {
 
     header{
         display: grid;
-        grid-template-columns: 30% 70%; 
+        grid-template-columns: 10% 90%; 
     }
 
     header img {
