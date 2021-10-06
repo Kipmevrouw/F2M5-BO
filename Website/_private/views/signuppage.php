@@ -1,24 +1,18 @@
 
 <?php $this->layout('layouts::website');?>
-<?php $this->start('sidebar');?>
-
-<div>
-    
-</div>
-
-<?php $this->stop()?>
 <link rel="stylesheet" href="<?php echo site_url( '/css/signupstyle.css' ) ?>" media="all">
 <div class="Body">
     <form action="#" class="form">
         <h1 class="text-center">Registreren</h1>
         <!-- Progress bar -->
         <div class="progressbar">
-            <div class="progress-step"></div>
-            <div class="progress-step"></div>
-            <div class="progress-step"></div>
-            <div class="progress-step"></div>
-            <div class="progress-step"></div>
-            <div class="progress-step"></div>
+            <div class="progress" id="progress"></div>
+            <div class="progress-step progress-step-active" data-title="Naam"></div>
+            <div class="progress-step" data-title="Gebruikersnaam"></div>
+            <div class="progress-step" data-title="Leeftijd"></div>
+            <div class="progress-step" data-title="Kennen"></div>
+            <div class="progress-step" data-title="UitCommunityHalen"></div>
+            <div class="progress-step" data-title="Ontwkkeling"></div>
         </div>
         <!-- Steps -->
         <div class="form-step form-step-active">
