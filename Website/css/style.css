@@ -6,9 +6,6 @@ body {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 20px;
-    grid-gap: 1fr;
     background: #fff;
 }
 
@@ -59,13 +56,10 @@ footer {
 
 
 @media screen and (min-width: 900px) {
-    main {
-        grid-template-columns: 1fr 350px;
-    }
 
     header{
         display: grid;
-        grid-template-columns: 20% 80%; 
+        grid-template-columns: 30% 70%; 
     }
 
     header img {
