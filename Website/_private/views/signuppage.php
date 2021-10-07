@@ -25,7 +25,7 @@
                 <input type="text" name="position" id="position">
             </div>
             <div class="">
-                <a href="" class="btn btn-next width-50 ml-auto">Volgende</a>
+                <a class="btn btn-next width-50 ml-auto">Volgende</a>
             </div>
         </div>
         <div class="form-step">
@@ -42,8 +42,8 @@
                 <input type="text" name="bevestigWachtwoord" id="bevestigWachtwoord">
             </div>
             <div class="btns-group">
-                <a href="" class="btn btn-previous">Vorige</a>
-                <a href="" class="btn btn-next">Volgende</a>
+                <a class="btn btn-previous">Vorige</a>
+                <a class="btn btn-next">Volgende</a>
             </div>
         </div>
         <div class="form-step">
@@ -52,8 +52,8 @@
                 <input type="number" name="leeftijd" id="leeftijd">
             </div>
             <div class="btns-group">
-                <a href="" class="btn btn-previous">Vorige</a>
-                <a href="" class="btn btn-next">Volgende</a>
+                <a class="btn btn-previous">Vorige</a>
+                <a class="btn btn-next">Volgende</a>
             </div>
         </div>
         <div class="form-step">
@@ -62,8 +62,8 @@
                 <input type="text" name="HKJO" id="HKJO">
             </div>
             <div class="btns-group">
-                <a href="" class="btn btn-previous">Vorige</a>
-                <a href="" class="btn btn-next">Volgende</a>
+                <a class="btn btn-previous">Vorige</a>
+                <a class="btn btn-next">Volgende</a>
             </div>
         </div>
         <div class="form-step">
@@ -72,8 +72,8 @@
                 <input type="text" name="WWJHUDC" id="WWJHUDC">
             </div>
             <div class="btns-group">
-                <a href="" class="btn btn-previous">Vorige</a>
-                <a href="" class="btn btn-next">Volgende</a>
+                <a class="btn btn-previous">Vorige</a>
+                <a class="btn btn-next">Volgende</a>
             </div>
         </div>
         <div class="form-step">
@@ -82,8 +82,8 @@
                 <input type="text" name="persoonlijkeOntwikkeling" id="persoonlijkeOntwikkeling">
             </div>
             <div class="btns-group">
-                <a href="" class="btn btn-previous">Vorige</a>
-                <input type="submit" value="Submit" class="btn">
+                <a class="btn btn-previous">Vorige</a>
+                <input type="submit" value="Versturen" class="btn">
             </div>
         </div>
     </form>

@@ -69,6 +69,7 @@ input{
     z-index: -0.5;
     background-color: var(--primary-color);
     width: 0%;
+    transition: 0.3s;
 }
 
 .progress-step{
@@ -92,6 +93,7 @@ input{
     color: #f3f3f3;
 }
 
+
 /* Form */
 .form{
     width: clamp(320, 30%, 430px);
@@ -103,6 +105,18 @@ input{
 
 .form-step{
     display: none;
+    animation: animate .5s;
+}
+
+@keyframes animate{
+    from {
+        transform: scale(1.0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1, 1);
+        opacity: 1;
+    }
 }
 
 .form-step-active{
