@@ -86,5 +86,9 @@
                 <input type="submit" value="Versturen" class="btn">
             </div>
         </div>
+        <div class="al-een-acc">
+            <p>Heb je al een account? <a href="/login">Log hier in</a>.</p>
+        </div>
     </form>
+    <script src="js/Signup.js"></script>
 </div>

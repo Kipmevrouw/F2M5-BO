@@ -6,24 +6,22 @@
 </div>
 
 <?php $this->stop()?>
-
-<div>
-    <h2>Login</h2>
-    <p>Vul hieronder je email en wachtwoord in.</p>
-    <form action="">
-        <div>
-            <label>Email</label>
-            <input type="text" name="email">
-            <span></span>
+<link rel="stylesheet" href="<?php echo site_url( '/css/signupstyle.css' ) ?>" media="all">
+<div class = "Body">
+    <form action="" class ="form">
+        <h2 class="text-center">Login</h2>
+        <p class ="text-center">Vul hieronder je email en wachtwoord in.</p>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
         </div>
-        <div>
+        <div class="input-group">
             <label>Wachtwoord</label>
             <input type="text" name="wachtwoord">
-            <span></span>
         </div>
-        <div>
-            <button>Login</button>
+        <div class="btns-group">
+            <a class="btn btn-previous">Login</a>
         </div>
-        <p>Heb je geen account? <a href="">Maak hier een account</a>.</p>
+        <p>Heb je geen account? <a href="/signup">Maak hier een account</a>.</p>
     </form>
 </div>
