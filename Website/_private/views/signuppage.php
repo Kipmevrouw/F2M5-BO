@@ -48,7 +48,7 @@
         </div>
         <div class="form-step">
             <div class="input-group">
-                <label for="leeftijd">Leeftijd</label>
+                <label for="leeftijd">Wat is je Leeftijd?</label>
                 <input type="number" name="leeftijd" id="leeftijd">
             </div>
             <div class="btns-group">
@@ -68,7 +68,7 @@
         </div>
         <div class="form-step">
             <div class="input-group">
-                <label for="WWJHUDC">Wat wil je halen uit de community?</label>
+                <label for="WWJHUDC">Wat wil je halen uit de <br> community?</label>
                 <input type="text" name="WWJHUDC" id="WWJHUDC">
             </div>
             <div class="btns-group">
@@ -78,7 +78,7 @@
         </div>
         <div class="form-step">
             <div class="input-group">
-                <label for="persoonlijkeOntwikkeling">Wat wil je leren op het gebied van persoonlijke ontwikkeling?</label>
+                <label for="persoonlijkeOntwikkeling">Wat wil je leren op het gebied van<br> persoonlijke ontwikkeling?</label>
                 <input type="text" name="persoonlijkeOntwikkeling" id="persoonlijkeOntwikkeling">
             </div>
             <div class="btns-group">
