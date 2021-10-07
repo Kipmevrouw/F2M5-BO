@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo site_url( '/css/style.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/NavbarStyle.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/homepage.css' ) ?>" media="all">
 	<?php if ( $this->section( 'css' ) ): ?>
 		<?php echo $this->section( 'css' ) ?>
 	<?php endif; ?>
