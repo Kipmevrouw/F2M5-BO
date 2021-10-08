@@ -1,6 +1,5 @@
 <?php $this->layout('layouts::website');?>
 
-<?php $this->start('content')?>
 <div class="homepage1">
 <h1>Welkom</h1>
 
@@ -46,7 +45,6 @@
     </button>
     </div>
 </div>
-<?php $this->stop()?>
 
 
 
