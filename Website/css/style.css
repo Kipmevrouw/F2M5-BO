@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
-body {
-    font-family: "Nunito", "Open Sans", Arial, Helvetica, sans-serif;
-    background: rgba(20, 58, 135, 0.8);
-}
-
 main {
     background: #fff;
 }
@@ -27,9 +22,7 @@ nav {
 }
 
 .content {
-    background: #ffffff;
-    min-height: 100px;
-    padding: 20px;
+    
 }
 
 nav ul {
@@ -37,20 +30,10 @@ nav ul {
     padding: 0;
 }
 
-aside {
-    min-height: 100px;
-    padding: 20px;
-}
-
-.top-10 ol {
-    margin: 0;
-    padding: 0 20px;
-}
-
 footer {
     padding: 20px;
     color: #fff;
-    background: rgba(0, 13, 39);
+    background: rgb(12, 5, 51);
 }
 
 
@@ -59,7 +42,7 @@ footer {
 
     header{
         display: grid;
-        grid-template-columns: 10% 90%; 
+        grid-template-columns: 20% 80%; 
     }
 
     header img {

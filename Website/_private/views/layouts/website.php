@@ -41,9 +41,6 @@
         <section class="content">
 			<?php echo $this->section( 'content' ) ?>
         </section>
-        <aside>
-			<?php echo $this->section( 'sidebar' ) ?>
-        </aside>
     </main>
     <footer>
         &copy; <?php echo date('Y')?>
