@@ -35,7 +35,19 @@ button{
         text-align: center;
         padding: 70px;
     }
-
-
+    .homepagekleur3{
+        text-align: center;
+        padding: 70px;
+        color: white;
+        background-color: rgb(86, 38, 202);
+    }
+    .homepagekleur3 h1, h6{
+        font-weight: bold;
+        padding: 10px;        
+    }
+    .homepagekleur3 button{
+        padding: 15px 100px;
+        margin-top: 15px;
+    }
 
 }

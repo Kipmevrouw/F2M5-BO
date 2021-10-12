@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
+    <title>Home | Transformers Community</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="images/logo images.png"/>
     <link rel="stylesheet" href="<?php echo site_url( '/css/style.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/NavbarStyle.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/homepage.css' ) ?>" media="all">
@@ -27,9 +28,6 @@
                     <?php else: ?>
                         <?php echo $this->fetch( '_navigation' ) ?>
                     <?php endif ?>  
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fas fa bars" style="font-size:24px;color:black;">></i>
-                    </a>
                 </div>
             </nav>
         </div>    
@@ -42,9 +40,6 @@
 			<?php echo $this->section( 'content' ) ?>
         </section>
     </main>
-    <footer>
-        &copy; <?php echo date('Y')?>
-    </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

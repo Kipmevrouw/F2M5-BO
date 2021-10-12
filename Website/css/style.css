@@ -21,9 +21,9 @@ nav {
     color: #fff;
 }
 
-.content {
+/* .content {
     
-}
+} */
 
 nav ul {
     margin: 0;
@@ -31,9 +31,9 @@ nav ul {
 }
 
 footer {
-    padding: 20px;
     color: #fff;
     background: rgb(12, 5, 51);
+    height: 100%;
 }
 
 
@@ -55,6 +55,12 @@ footer {
     }
     .item2{
         padding: 2px;
+    }
+    footer{
+        margin-top: 5px;
+        padding: 100px;
+        left: 0;
+        width: 100%;
     }
 
 }

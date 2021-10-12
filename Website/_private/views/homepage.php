@@ -53,13 +53,40 @@
 <div class="homepagekleur2">
     <h2>Wij zijn een groeiende beweging van jongeren die zich <br>
         inzet voor mentale gezondheid.</h2> <br>
-    <h6>We leven in een samenleving waar onvoldoende ruimte is voor onze mentale gezondheid. Daar <br>
+    <p>We leven in een samenleving waar onvoldoende ruimte is voor onze mentale gezondheid. Daar <br>
         willen wij samen verandering in brengen! We zijn een community van jongeren die <br>
         ervaringen en tips uitwisselt op het gebied van mentale gezondheid en persoonlijke <br>
-        ontwikkeling. Zo creëren we meer openheid en helpen we elkaar om te groeien.</h6><br> <br>
+        ontwikkeling. Zo creëren we meer openheid en helpen we elkaar om te groeien.</p><br> <br>
     <button href="">Onze missie en vissie</button>
 
 </div>
+<div class="homepagekleur3">
+    <h1>Geen tijd, maar wel bijdragen? Doneer!</h1>
+    <h6>Zou je ons graag willen helpen, maar heb je gewoonweg de tijd niet<br> (en wel een paar eurotjes over)?</h6>
+    <p>Dan kan je alsnog impact maken door te doneren wat jij kwijt kan. <br> 
+        Hiermee help je ons onder andere om meer (h)erkenning en peer support <br>
+        te creëren tussen jongeren onderling, en om tools te ontwikkelen die <br>
+        jongeren helpen mentaal gezond te zijn.</p>
+        <button href="">Doneer</button>
+</div>
+<div class="homepagekleur4">
+    <h1>Onze partners</h1>
+    <img src="https://static.wixstatic.com/media/e72157_4ee776f2d89f4cdfb7067608295b2fd1~mv2.gif" alt="">
+    <img src="https://static.wixstatic.com/media/e72157_5fb0e73c2cf948148a5ac8cb5f5b1dcd~mv2.png/v1/fill/w_154,h_154,al_c,q_85,usm_0.66_1.00_0.01/Fonds%20voor%20Communicatie%20Innovatie.webp" alt="">
+</div>
+<footer>
+        <section class="contact1">
+            <h1>Transformers <br> Community</h1>
+            <h3>Wij empoweren jongeren <br>om mentaal gezond te zijn.</h3>
+            
+        </section>
+        <section class="contact2">
+
+        </section>
+        <section class="contact3">
+
+        </section>
+</footer>
 
 
 
