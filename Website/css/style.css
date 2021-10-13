@@ -8,9 +8,10 @@ header {
     padding: 20px;
     background: rgba(244, 250, 255);
     color: #fff;
+    font-weight: bold;
 }
 header img{
-    width: 90px;
+    width: 100px;
     height: 40px;
 }
 header h1 {
@@ -20,10 +21,6 @@ header h1 {
 nav {
     color: #fff;
 }
-
-/* .content {
-    
-} */
 
 nav ul {
     margin: 0;
@@ -42,7 +39,7 @@ footer {
 
     header{
         display: grid;
-        grid-template-columns: 20% 80%; 
+        grid-template-columns: 20% 75% 15%; 
     }
 
     header img {
@@ -55,6 +52,9 @@ footer {
     }
     .item2{
         padding: 2px;
+    }
+    .item3 button{
+        padding: 20px;
     }
     footer{
         margin-top: 5px;

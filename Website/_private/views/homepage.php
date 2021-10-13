@@ -9,14 +9,14 @@
             helpen we elkaar om te groeien. <br> <br> </h6>
         <button href="">Naar community</button>
     </div>
-    <div class="homepage2">
+    <div class="homepage2" style="padding-top: 10px;">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="border-radius: 12px;">
             <div class="carousel-item active">
             <img src="images/lisa.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
@@ -60,6 +60,7 @@
     <button href="">Onze missie en vissie</button>
 
 </div>
+
 <div class="homepagekleur3">
     <h1>Geen tijd, maar wel bijdragen? Doneer!</h1>
     <h6>Zou je ons graag willen helpen, maar heb je gewoonweg de tijd niet<br> (en wel een paar eurotjes over)?</h6>
