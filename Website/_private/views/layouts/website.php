@@ -32,7 +32,6 @@
             </nav>
         </div>    
         <div class="item item3"> 
-        <!-- Hier komt sign up en log in knop -->
         </div>
     </header>
     <main>
