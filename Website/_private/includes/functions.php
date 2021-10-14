@@ -183,3 +183,30 @@ function createUser($voornaam, $achternaam, $email, $wachtwoord, $leeftijd, $HKJ
 	$statement->execute( $params );
 	
 }
+
+function validateLoginData($data){
+	$errors = [];
+	
+	$email 		= filter_var( $data['email'], FILTER_VALIDATE_EMAIL );
+	$wachtwoord = trim( $data['wachtwoord'] );
+	
+	// Checks: valideren of email echt eeen geldig email is
+	if ( $email === false ) {
+		$errors['email'] = 'Geen geldig email ingevult';
+	}
+	// Checks: wachtwoord minimaal 6 tekens
+	if ( strlen( $wachtwoord ) < 6 ){
+		$errors['wachtwoord'] = 'Geen geldig wachtwoord, minimaal 6 tekens';
+	}
+
+	$data = [
+		'email' => $data['email'],
+		'wachtwoord' => $wachtwoord,
+	];
+	
+	return[
+		'data' => $data,
+		'errors' => $errors
+	];
+	
+}

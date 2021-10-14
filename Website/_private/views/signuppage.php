@@ -44,7 +44,7 @@
             </div>
             <div class="input-group">
                 <label for="wachtwoord">Wachtwoord</label>
-                <input type="text" name="wachtwoord" id="wachtwoord" value="<?php echo input('wachtwoord')?>">
+                <input type="password" name="wachtwoord" id="wachtwoord" value="<?php echo input('wachtwoord')?>">
                 <?php if(isset($errors['wachtwoord'])):?>
                     <?php echo $errors['wachtwoord']?>
                 <?php endif;?>

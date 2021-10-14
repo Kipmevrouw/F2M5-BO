@@ -13,11 +13,17 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 
 	SimpleRouter::get( '/', 'WebsiteController@home' )->name( 'home' );
 
-	SimpleRouter::get( '/login', 'LoginController@login' )->name( 'login' );
+	// Registratie routes
+	SimpleRouter::get( '/signup', 'RegistratieController@signup' )->name( 'signup' );
+	SimpleRouter::post( '/signup/handle', 'RegistratieController@handleSignup' )->name( 'signup.handle' );
+	SimpleRouter::get( '/signup/bedankt', 'RegistratieController@registrationThankYou' )->name( 'signup.thankyou' );
 
-	SimpleRouter::get( '/signup', 'LoginController@signup' )->name( 'signup' );
-	SimpleRouter::post( '/signup/handle', 'LoginController@handleSignup' )->name( 'signup.handle' );
-	SimpleRouter::get( '/signup/bedankt', 'LoginController@registrationThankYou' )->name( 'signup.thankyou' );
+	// Login Routes
+	SimpleRouter::get( '/login', 'LoginController@login' )->name( 'login' );
+	SimpleRouter::post( '/login/handle', 'LoginController@handleLogin' )->name( 'login.handle' );
+
+	SimpleRouter::get( '/ingelogd/dashboard', 'LoginController@userDashboard' )->name( 'login.dashboard' );
+	
 
 
 	// STOP: Tot hier al je eigen URL's zetten, dit stukje laat de 4040 pagina zien als een route/url niet kan worden gevonden.

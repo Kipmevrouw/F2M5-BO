@@ -8,19 +8,25 @@
 <?php $this->stop()?>
 <link rel="stylesheet" href="<?php echo site_url( '/css/signupstyle.css' ) ?>" media="all">
 <div class = "Body">
-    <form action="" class ="form">
+    <form action="<?php echo url('login.handle')?>" method ="POST" class ="form">
         <h2 class="text-center">Login</h2>
         <p class ="text-center">Vul hieronder je email en wachtwoord in.</p>
         <div class="input-group">
             <label for="email">Email</label>
-            <input type="text" name="email" id="email">
+            <input type="email" name="email" id="email" value="<?php echo input('email')?>">
+            <?php if(isset($errors['email'])):?>
+                    <?php echo $errors['email']?>
+            <?php endif;?>
         </div>
         <div class="input-group">
             <label>Wachtwoord</label>
-            <input type="text" name="wachtwoord">
+            <input type="password" name="wachtwoord">
+            <?php if(isset($errors['wachtwoord'])):?>
+                    <?php echo $errors['wachtwoord']?>
+            <?php endif;?>
         </div>
-        <div class="btns-group">
-            <a class="btn btn-previous">Login</a>
+        <div class="">
+            <button type="submit" class="btn btn-previous width-50 ml-auto">Login</button>
         </div>
         <p>Heb je geen account? <a href="/signup">Maak hier een account</a>.</p>
     </form>
