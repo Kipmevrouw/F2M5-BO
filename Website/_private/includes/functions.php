@@ -210,3 +210,22 @@ function validateLoginData($data){
 	];
 	
 }
+
+function loginUser($user){
+	$_SESSION['user_id'] = $user['id'];
+}
+
+function logoutUser(){
+	unset($_SESSION['user_id']);
+}
+
+function isLoggedIn(){
+	return !empty($_SESSION['user_id']);
+}
+
+function loginCheck(){
+	if (!isLoggedIn()){
+		$login_url = url('login');
+		redirect($login_url);
+	}
+}

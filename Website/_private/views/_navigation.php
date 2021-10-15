@@ -7,9 +7,16 @@
             <div>
                 <a href="<?php echo url( 'signup' ) ?>"<?php if ( current_route_is( 'signup' ) ): ?> class="active"<?php endif ?>>Aanmelden</a>
             </div>
-            <div>
-                <a href="<?php echo url( 'Login' ) ?>"<?php if ( current_route_is( 'Login' ) ): ?> class="active"<?php endif ?>>Log in</a>  
-            </div>
+            <?php if (isLoggedIn()):?>
+                <div>
+                    <a href="<?php echo url( 'logout' )?>">Log uit</a>
+                </div>
+            <?php else: ?>
+                
+                <div>
+                    <a href="<?php echo url( 'Login' ) ?>"<?php if ( current_route_is( 'Login' ) ): ?> class="active"<?php endif ?>>Log in</a>  
+                </div>
+            <?php endif;?>
         
     </li>
 </ul>
