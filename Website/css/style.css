@@ -32,6 +32,35 @@ footer {
     background: rgb(12, 5, 51);
     height: 100%;
 }
+footer h1{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+footer h2{
+    color: rgb(254, 78, 2);
+    font-size: 20px;
+}
+.contact1 p{
+    margin-top: 50px;
+    font-size: 14px;
+}
+.contact3 a{
+    text-decoration: none;
+    color: white;
+    text-decoration: overline;
+    justify-content: var(--text-align,flex-start);
+    padding-left: var(--textSpacing,10px);
+    padding-right: var(--textSpacing,10px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact3 a:hover{
+    color: rgb(254, 78, 2);
+}
+
 
 
 
@@ -58,9 +87,11 @@ footer {
     }
     footer{
         margin-top: 5px;
-        padding: 100px;
+        padding: 80px;
         left: 0;
         width: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
     }
 
 }

@@ -40,7 +40,6 @@ button:hover{
         background: rgba(244, 250, 255);
         text-align: center;
         padding: 70px;
-        background-image: url(images/cirkel-van-oranje.png);
     }
     .homepagekleur3{
         text-align: center;
@@ -51,6 +50,7 @@ button:hover{
     .homepagekleur4{
         text-align: center;
         padding: 50px;
+        background-color: rgba(244, 250, 255);
     }
     .homepagekleur3 h1, h6{
         font-weight: bold;
@@ -63,7 +63,6 @@ button:hover{
     .homepagekleur4 h1{
         padding-bottom: 10px;
         font-size: 60px;
-        background-color: rgba(244, 250, 255);
         text-decoration: overline rgb(254, 78, 2);
     }
     .homepagekleur4 img{
