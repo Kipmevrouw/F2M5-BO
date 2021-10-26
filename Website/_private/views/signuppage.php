@@ -112,4 +112,5 @@
     </form>
 
     <script src="<?php echo site_url("/js/Signup.js")?>"></script>
+    <script src="<?php echo site_url("/js/navbar.js")?>"></script>
 </div>

@@ -30,4 +30,5 @@
         </div>
         <p>Heb je geen account? <a href="/signup">Maak hier een account</a>.</p>
     </form>
+    <script src="<?php echo site_url("/js/navbar.js")?>"></script>
 </div>

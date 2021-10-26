@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?php echo site_url( '/css/style.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/NavbarStyle.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/homepage.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/overons.css' ) ?>" media="all">
 	<?php if ( $this->section( 'css' ) ): ?>
 		<?php echo $this->section( 'css' ) ?>
 	<?php endif; ?>
@@ -27,7 +28,10 @@
                         <?php echo $this->section( 'navigation' ) ?>
                     <?php else: ?>
                         <?php echo $this->fetch( '_navigation' ) ?>
-                    <?php endif ?>  
+                    <?php endif ?>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fas fa bars" style="font-size:24px;color:black;">></i>
+                    </a>  
                 </div>
             </nav>
         </div>    
