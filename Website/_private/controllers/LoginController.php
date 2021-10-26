@@ -33,7 +33,7 @@ class LoginController {
 
             if(password_verify($result['data']['wachtwoord'], $user['wachtwoord'])){
                 // Gebruiker inloggen
-                $_SESSION['user_id'] = $user['id'];
+                loginUser($user);
 
                 // Gebruiker doorsturen nar een eigen dashbord (alleen ingelogde gebruikers)
                 redirect(url('login.dashboard'));
@@ -52,8 +52,18 @@ class LoginController {
 
     public function userDashboard(){
 
-        echo "Ingelogd";
+        // Checken of je wel echt ben ingelogd
+        loginCheck();
 
+        $template_engine = get_template_engine();
+        echo $template_engine->render( 'user_dashboard' );
+
+    }
+
+    public function logout(){
+        // Uitloggen van gebruiker
+        logoutUser();
+        redirect(url('home'));
     }
 
 }
