@@ -107,7 +107,7 @@
             </div>
         </div>
         <div class="al-een-acc">
-            <p>Heb je al een account? <a href="/login">Log hier in</a>.</p>
+            <p>Heb je al een account? <a href="<?php echo url( 'login' )?>">Log hier in</a>.</p>
         </div>
     </form>
 
