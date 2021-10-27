@@ -13,6 +13,7 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 
 	SimpleRouter::get( '/', 'WebsiteController@home' )->name( 'home' );
 	SimpleRouter::get( '/overons', 'OveronsController@overons' )->name( 'overons' );
+	SimpleRouter::get( '/Wordtransformer', 'WordtransformerController@Wordtransformer' )->name( 'Wordtransformer' );
 
 	// Registratie routes
 	SimpleRouter::group(['prefix' => '/registreren'], function(){
