@@ -16,18 +16,26 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::get( '/Wordtransformer', 'WordtransformerController@Wordtransformer' )->name( 'Wordtransformer' );
 
 	// Registratie routes
-	SimpleRouter::get( '/signup', 'RegistratieController@signup' )->name( 'signup' );
-	SimpleRouter::post( '/signup/handle', 'RegistratieController@handleSignup' )->name( 'signup.handle' );
-	SimpleRouter::get( '/signup/bedankt', 'RegistratieController@registrationThankYou' )->name( 'signup.thankyou' );
-
+	SimpleRouter::group(['prefix' => '/registreren'], function(){
+		SimpleRouter::get( '/', 'RegistratieController@signup' )->name( 'signup' );
+		SimpleRouter::post( '/handle', 'RegistratieController@handleSignup' )->name( 'signup.handle' );
+		SimpleRouter::get( '/bedankt', 'RegistratieController@registrationThankYou' )->name( 'signup.thankyou' );
+	});
+	
 	// Login Routes
-	SimpleRouter::get( '/login', 'LoginController@login' )->name( 'login' );
-	SimpleRouter::post( '/login/handle', 'LoginController@handleLogin' )->name( 'login.handle' );
+	SimpleRouter::group(['prefix' => '/login'], function(){
+		SimpleRouter::get( '/', 'LoginController@login' )->name( 'login' );
+		SimpleRouter::post( '/handle', 'LoginController@handleLogin' )->name( 'login.handle' );
+	});
+	
 	SimpleRouter::get( '/logout', 'LoginController@logout' )->name( 'logout' );
 
 	SimpleRouter::get( '/ingelogd/dashboard', 'LoginController@userDashboard' )->name( 'login.dashboard' );
-	
-	SimpleRouter::get( '/admin', 'AdminController@admin' )->name( 'admin' );
+	SimpleRouter::group(['prefix' => '/admin'], function(){
+		SimpleRouter::get( '/', 'AdminController@admin' )->name( 'admin' );
+	});
+
+	SimpleRouter::get( '/ingelogd', 'SecureController@secure' )->name( 'secure' );
 
 
 	// STOP: Tot hier al je eigen URL's zetten, dit stukje laat de 4040 pagina zien als een route/url niet kan worden gevonden.

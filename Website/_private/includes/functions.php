@@ -229,3 +229,9 @@ function loginCheck(){
 		redirect($login_url);
 	}
 }
+
+// function adminCheck(){
+// 	if (loginCheck() && ){
+
+// 	}
+// }

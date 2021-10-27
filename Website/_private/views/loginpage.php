@@ -28,7 +28,7 @@
         <div class="">
             <button type="submit" class="btn btn-previous width-50 ml-auto">Login</button>
         </div>
-        <p>Heb je geen account? <a href="/signup">Maak hier een account</a>.</p>
+        <p>Heb je geen account? <a href="<?php echo url( 'signup' ) ?>">Maak hier een account</a>.</p>
     </form>
     <script src="<?php echo site_url("/js/navbar.js")?>"></script>
 </div>
