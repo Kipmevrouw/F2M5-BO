@@ -7,7 +7,14 @@
             zelfverzekerd willen zijn en tegenslagen omzetten in <br>
             kracht. We doen dit samen: zo leren we meer en <br>
             helpen we elkaar om te groeien. <br> <br> </h6>
-        <button href="">Naar community</button>
+        <a href="" style="border-radius: 12px;
+    align-items: center;
+    color: white;
+    padding: 15px 60px;
+    font-weight: bold;
+    background-color: rgb(254, 78, 2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 0;">Naar community</a>
     </div>
     <div class="homepage2" style="padding-top: 10px;">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -57,7 +64,14 @@
         willen wij samen verandering in brengen! We zijn een community van jongeren die <br>
         ervaringen en tips uitwisselt op het gebied van mentale gezondheid en persoonlijke <br>
         ontwikkeling. Zo creëren we meer openheid en helpen we elkaar om te groeien.</p><br> <br>
-    <button href="">Onze missie en vissie</button>
+    <a href="" style="border-radius: 12px;
+    align-items: center;
+    color: white;
+    padding: 15px 60px;
+    font-weight: bold;
+    background-color: rgb(254, 78, 2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 0;">Onze missie en vissie</a>
 
 </div>
 
@@ -68,7 +82,14 @@
         Hiermee help je ons onder andere om meer (h)erkenning en peer support <br>
         te creëren tussen jongeren onderling, en om tools te ontwikkelen die <br>
         jongeren helpen mentaal gezond te zijn.</p>
-        <button href="">Doneer</button>
+        <a id="button" href="" style="border-radius: 12px;
+    align-items: center;
+    color: white;
+    padding: 15px 60px;
+    font-weight: bold;
+    background-color: rgb(254, 78, 2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 0;">Doneer</a>
 </div>
 <div class="homepagekleur4">
     <h1>Onze partners</h1>

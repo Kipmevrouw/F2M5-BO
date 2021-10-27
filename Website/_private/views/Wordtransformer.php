@@ -9,7 +9,14 @@
         van jongeren.</h1>
         <h3>Leer meer over mentale gezondheid<br>
         en help anderen om de beste versie van zichzelf te zijn.</h3>
-        <button href="https://docs.google.com/forms/d/e/1FAIpQLSdV7hS_aXIB5_LhblG0SnnlQ_KWvI7XiStvSusICGZvCR4CSg/viewform">Word ook een transformer!</button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV7hS_aXIB5_LhblG0SnnlQ_KWvI7XiStvSusICGZvCR4CSg/viewform" style="border-radius: 12px;
+    align-items: center;
+    color: white;
+    padding: 15px 60px;
+    font-weight: bold;
+    background-color: rgb(254, 78, 2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 0; a:hover{ color: rgb(30, 7, 160); }">Word ook een transformer!</a>
     </div>
 </div>
 <div class="transformerkleur1">
@@ -24,7 +31,16 @@
     daarom de missie van de Transformers Community om jongeren te empoweren om mentaal<br>
     gezond te zijn. Om jongeren de tools en kennis te geven waarmee zij hun zelfbeeld en gevoel<br>
     van eigenwaarde versterken. En daar kunnen we wel wat handjes bij gebruiken!</p>
-    <button href="https://docs.google.com/forms/d/e/1FAIpQLSdV7hS_aXIB5_LhblG0SnnlQ_KWvI7XiStvSusICGZvCR4CSg/viewform">Meld je vrijwillig aan!</button>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV7hS_aXIB5_LhblG0SnnlQ_KWvI7XiStvSusICGZvCR4CSg/viewform" style="border-radius: 12px;
+    align-items: center;
+    color: white;
+    padding: 15px 60px;
+    font-weight: bold;
+    background-color: rgb(254, 78, 2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 0;">Meld je vrijwillig aan!</a>
+</div>
+    
 
 </div>
 <div class="transformerkleur2">
@@ -39,7 +55,14 @@
     <p>Wil je meer leren over mentale gezondheid, anderen helpen om zich te ontwikkelen tot de beste<br>
     versie van zichzelf én werken aan je CV door je flexibel in te zetten bij de Transformers Community?</p>
     <p>Laat dan hier je gegevens achter en wij nemen zo snel mogelijk contact met je op!</p>
-    <button href="https://docs.google.com/forms/d/e/1FAIpQLSdV7hS_aXIB5_LhblG0SnnlQ_KWvI7XiStvSusICGZvCR4CSg/viewform">Vul het formulier in!</button>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV7hS_aXIB5_LhblG0SnnlQ_KWvI7XiStvSusICGZvCR4CSg/viewform" style="border-radius: 12px;
+    align-items: center;
+    color: white;
+    padding: 15px 60px;
+    font-weight: bold;
+    background-color: rgb(254, 78, 2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 0;">Vul het formulier in!</a>
 </div>
 <footer>
         <section class="contact1">
