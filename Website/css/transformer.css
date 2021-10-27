@@ -4,6 +4,23 @@
     float: none;
     width: 100%;
     padding: 20px;
+    text-align: center;
+}
+.transformerkleur h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.transformerkleur h3{
+    font-size: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.transformerkleur1{
+    text-align: center;
+    padding: 50px;
+}
+.transformerkleur1 h1,p{
+    font-weight: bold;
 }
 .transformerkleur2{
     background-color: rgb(30, 7, 160);
@@ -11,6 +28,21 @@
     float: none;
     width: 100%;
     padding: 20px;
+    text-align: center;
+}
+.transformerkleur2 h1{
+    font-weight: bold;
+    text-decoration: overline rgb(254, 78, 2);
+    padding-bottom: 10px;
+}
+.transformerkleur3{
+    text-align: center;
+    padding: 50px;
+}
+.transformerkleur3 h1{
+    font-weight: bold;
+    text-decoration: underline rgb(254, 78, 2) 20px;
+    padding-bottom: 20px;
 }
 .transformerkleur img{
     width: auto;
@@ -34,7 +66,7 @@ button:hover{
     .transformerkleur{
         display: grid;
         padding: 50px 100px;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
     }
     .transformerkleur h1{
         font-size: 50px;
@@ -52,10 +84,26 @@ button:hover{
     }
     .transformerkleur1{
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 50px;
     }
     .transformerkleur1 h1,p{
         font-weight: bold;
+    }
+    .transformerkleur2 h1{
+        font-weight: bold;
+        text-decoration: overline rgb(254, 78, 2);
+        padding-bottom: 10px;
+    }
+    .transformerkleur2{
+        padding: 100px;
+    }
+    .transformerkleur3{
+        text-align: center;
+        padding: 50px;
+    }
+    .transformerkleur3 h1{
+        font-weight: bold;
+        text-decoration: underline rgb(254, 78, 2) 20px;
+        padding-bottom: 20px;
     }
 }
