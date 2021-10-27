@@ -68,7 +68,7 @@ footer h2{
 
     header{
         display: grid;
-        grid-template-columns: 20% 75% 15%; 
+        grid-template-columns: 2fr 5fr 1fr; 
     }
 
     header img {
