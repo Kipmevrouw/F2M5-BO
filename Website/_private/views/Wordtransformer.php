@@ -16,7 +16,7 @@
     font-weight: bold;
     background-color: rgb(254, 78, 2);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border: 0; a:hover{ color: rgb(30, 7, 160); }">Word ook een transformer!</a>
+    border: 0;">Word ook een transformer!</a>
     </div>
 </div>
 <div class="transformerkleur1">

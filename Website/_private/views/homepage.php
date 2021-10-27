@@ -7,7 +7,7 @@
             zelfverzekerd willen zijn en tegenslagen omzetten in <br>
             kracht. We doen dit samen: zo leren we meer en <br>
             helpen we elkaar om te groeien. <br> <br> </h6>
-        <a href="" style="border-radius: 12px;
+        <a href="https://leden.transformers.community/" style="border-radius: 12px;
     align-items: center;
     color: white;
     padding: 15px 60px;
@@ -82,7 +82,7 @@
         Hiermee help je ons onder andere om meer (h)erkenning en peer support <br>
         te creëren tussen jongeren onderling, en om tools te ontwikkelen die <br>
         jongeren helpen mentaal gezond te zijn.</p>
-        <a id="button" href="" style="border-radius: 12px;
+        <a id="button" href="https://leden.transformers.community/" style="border-radius: 12px;
     align-items: center;
     color: white;
     padding: 15px 60px;
