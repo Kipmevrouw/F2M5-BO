@@ -94,3 +94,4 @@
             <a href="">Contact</a>
         </section>
 </footer>
+<script src="<?php echo site_url("/js/navbar.js")?>"></script>
