@@ -14,7 +14,7 @@
             <?php else: ?>
                 
                 <div>
-                    <a href="<?php echo url( 'Login' ) ?>"<?php if ( current_route_is( 'Login' ) ): ?> class="active"<?php endif ?>>Log in</a>  
+                    <a href="<?php echo url( 'login' ) ?>"<?php if ( current_route_is( 'login' ) ): ?> class="active"<?php endif ?>>Log in</a>  
                 </div>
             <?php endif;?>
         

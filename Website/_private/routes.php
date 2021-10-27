@@ -3,6 +3,7 @@
 use Pecee\Http\Request;
 use Pecee\SimpleRouter\Exceptions\NotFoundHttpException;
 use Pecee\SimpleRouter\SimpleRouter;
+use Website\Middleware\IsAuthenticated;
 
 SimpleRouter::setDefaultNamespace( 'Website\Controllers' );
 
@@ -31,11 +32,14 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::get( '/logout', 'LoginController@logout' )->name( 'logout' );
 
 	SimpleRouter::get( '/ingelogd/dashboard', 'LoginController@userDashboard' )->name( 'login.dashboard' );
+
 	SimpleRouter::group(['prefix' => '/admin'], function(){
 		SimpleRouter::get( '/', 'AdminController@admin' )->name( 'admin' );
 	});
 
-	SimpleRouter::get( '/ingelogd', 'SecureController@secure' )->name( 'secure' );
+	SimpleRouter::group(['prefix' => '/ingelogd', 'middleware' => IsAuthenticated::class], function(){
+		SimpleRouter::get( '/', 'SecureController@secure' )->name( 'secure' );
+	});
 
 
 	// STOP: Tot hier al je eigen URL's zetten, dit stukje laat de 4040 pagina zien als een route/url niet kan worden gevonden.

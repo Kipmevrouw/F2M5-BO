@@ -23,3 +23,16 @@ function getUserByEmail($email){
 
 	return false;
 }
+
+function getUserById($id){
+	$connection = dbConnect();
+	$sql		= "SELECT * FROM `users` WHERE `id` = :id";
+	$statement	= $connection->prepare( $sql );
+	$statement->execute( [ 'id' => $id ]);
+
+	if($statement->rowCount() === 1){
+		return $statement->fetch();
+	}
+
+	return false;
+}

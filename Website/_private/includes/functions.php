@@ -230,8 +230,10 @@ function loginCheck(){
 	}
 }
 
-// function adminCheck(){
-// 	if (loginCheck() && ){
+function loggedInUser(){
+	if (!isLoggedIn()){
+		return false;
+	}
 
-// 	}
-// }
+	return getUserById($_SESSION['user_id']);
+}
