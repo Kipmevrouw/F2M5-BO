@@ -63,12 +63,11 @@ footer h2{
 
 
 
-
 @media screen and (min-width: 900px) {
 
     header{
         display: grid;
-        grid-template-columns: 2fr 5fr 1fr; 
+        grid-template-columns: 1fr 4fr 2fr; 
     }
 
     header img {

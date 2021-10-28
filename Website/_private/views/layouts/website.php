@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?php echo site_url( '/css/homepage.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/overons.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/transformer.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/contact.css' ) ?>" media="all">
 	<?php if ( $this->section( 'css' ) ): ?>
 		<?php echo $this->section( 'css' ) ?>
 	<?php endif; ?>
