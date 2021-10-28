@@ -4,6 +4,7 @@ use Pecee\Http\Request;
 use Pecee\SimpleRouter\Exceptions\NotFoundHttpException;
 use Pecee\SimpleRouter\SimpleRouter;
 use Website\Middleware\IsAuthenticated;
+use Website\Middleware\IsSuperAdmin;
 
 SimpleRouter::setDefaultNamespace( 'Website\Controllers' );
 
@@ -33,7 +34,7 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 
 	SimpleRouter::get( '/ingelogd/dashboard', 'LoginController@userDashboard' )->name( 'login.dashboard' );
 
-	SimpleRouter::group(['prefix' => '/admin'], function(){
+	SimpleRouter::group(['prefix' => '/admin', 'middleware' => IsSuperAdmin::class], function(){
 		SimpleRouter::get( '/', 'AdminController@admin' )->name( 'admin' );
 	});
 

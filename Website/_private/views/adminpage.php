@@ -1,3 +1,3 @@
 <?php $this->layout('layouts::website');?>
 
-<p>admin</p>
+<h1>Welkom <?php echo $user['voornaam']?></h1>
