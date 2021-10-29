@@ -37,7 +37,8 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 
 	SimpleRouter::group(['prefix' => '/admin', 'middleware' => IsSuperAdmin::class], function(){
 		SimpleRouter::get( '/', 'AdminController@admin' )->name( 'admin' );
-		
+		SimpleRouter::get( '/feed', 'AdminController@feed' )->name( 'admin.feed' );
+		SimpleRouter::get( '/gebruikers', 'AdminController@gebruikers' )->name( 'admin.gebruikers' );
 	});
 
 	SimpleRouter::group(['prefix' => '/ingelogd', 'middleware' => IsAuthenticated::class], function(){
