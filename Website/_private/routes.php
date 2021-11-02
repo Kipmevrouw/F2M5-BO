@@ -38,13 +38,16 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::group(['prefix' => '/admin', 'middleware' => IsSuperAdmin::class], function(){
 		SimpleRouter::get( '/', 'AdminController@admin' )->name( 'admin' );
 		SimpleRouter::get( '/feed', 'AdminController@feed' )->name( 'admin.feed' );
-		SimpleRouter::get( '/gebruikers', 'AdminController@gebruikers' )->name( 'admin.gebruikers' );
+		SimpleRouter::get( '/gebruikers', 'GebruikersController@users' )->name( 'admin.gebruikers' );
+		SimpleRouter::get( '/gebruikers/{slug}', 'GebruikersController@showUsers' )->name( 'gebruiker.show' );
 	});
 
 	SimpleRouter::group(['prefix' => '/ingelogd', 'middleware' => IsAuthenticated::class], function(){
 		SimpleRouter::get( '/', 'SecureController@secure' )->name( 'secure' );
 		SimpleRouter::get( '/dashboard', 'LoginController@userDashboard' )->name( 'login.dashboard' );
 	});
+
+	
 
 
 	// STOP: Tot hier al je eigen URL's zetten, dit stukje laat de 4040 pagina zien als een route/url niet kan worden gevonden.

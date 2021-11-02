@@ -1,7 +1,7 @@
 <ul>
     <li>
-        <a href="<?php echo url( 'feed' ) ?>"<?php if ( current_route_is( 'feed' ) ): ?> class="active"<?php endif ?>>Feed</a>
-        <a href="<?php echo url( 'gebruikers' ) ?>"<?php if ( current_route_is( 'gebruikers' ) ): ?> class="active"<?php endif ?>>Gebruikers</a>
+        <a href="<?php echo url( 'admin.feed' ) ?>"<?php if ( current_route_is( 'feed' ) ): ?> class="active"<?php endif ?>>Feed</a>
+        <a href="<?php echo url( 'admin.gebruikers' ) ?>"<?php if ( current_route_is( 'gebruikers' ) ): ?> class="active"<?php endif ?>>Gebruikers</a>
             <?php if (isLoggedIn()):?>
                 <div>
                     <a href="<?php echo url( 'logout' )?>">Log uit</a>
