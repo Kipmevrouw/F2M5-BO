@@ -36,3 +36,19 @@ function getUserById($id){
 
 	return false;
 }
+
+function getUserAccount($slug){
+	
+	$connection = dbConnect();
+
+	$sql = "SELECT * FROM `users` WHERE voornaam = :slug";
+
+	$statement = $connection->prepare($sql);
+	$statement->execute(
+		[ 
+			'slug' => $slug
+		]
+	);
+
+	return $statement->fetch();
+}

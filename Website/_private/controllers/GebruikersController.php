@@ -10,7 +10,10 @@ class GebruikersController{
 
     public function showUsers($slug){
         
-        echo $slug;
+        $account = getUserAccount($slug);
+
+        $template_engine = get_template_engine();
+        return $template_engine->render( 'gebruikers_gebruiker', ['account' => $account]);
 
     }
 
