@@ -17,4 +17,12 @@ class GebruikersController{
 
     }
 
+    public function verwijderen($slug){
+
+        $account = getUserAccount($slug);
+        
+        deleteUser($slug);
+
+    }
+
 }

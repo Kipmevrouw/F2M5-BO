@@ -109,15 +109,15 @@ function validateRegisrtatoinData($data){
 	}
 	// Checks: of de rest is ingevult
 	if ( strlen( $voornaam ) < 1 ){
-		$errors['voornaam'] = 'Geen voornaam ingevult';
+		$errors['voornaam'] = 'Geen voornaam ingevuld';
 	}
 	
 	if ( strlen( $achternaam) < 1 ){
-		$errors['achternaam'] = 'Geen voornaam ingevult';
+		$errors['achternaam'] = 'Geen voornaam ingevuld';
 	}
 
 	if ( strlen( $leeftijd) < 1 ){
-		$errors['leeftijd'] = 'Geen leeftijd ingevult';
+		$errors['leeftijd'] = 'Geen leeftijd ingevuld';
 	}
 
 	if ( strlen( $HKJO) < 1 ){
@@ -236,4 +236,14 @@ function loggedInUser(){
 	}
 
 	return getUserById($_SESSION['user_id']);
+}
+
+function deleteUser($selectedUserId){
+	$connection = dbConnect();
+	$sql	   = "DELETE FROM `users` WHERE `id` = :id";
+	$statement = $connection->prepare( $sql );
+	$statement->execute([ 'id' => $selectedUserId ]);
+
+	$home_url = url('admin.gebruikers');
+	redirect($home_url);
 }
