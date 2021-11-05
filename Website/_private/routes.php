@@ -3,6 +3,7 @@
 use Pecee\Http\Request;
 use Pecee\SimpleRouter\Exceptions\NotFoundHttpException;
 use Pecee\SimpleRouter\SimpleRouter;
+use Website\Controllers\GebruikersController;
 use Website\Middleware\IsAuthenticated;
 use Website\Middleware\IsSuperAdmin;
 
@@ -41,6 +42,8 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 		SimpleRouter::get( '/gebruikers', 'GebruikersController@users' )->name( 'admin.gebruikers' );
 		SimpleRouter::get( '/gebruiker/{slug}', 'GebruikersController@showUsers' )->name( 'gebruiker.show' );
 		SimpleRouter::post( '/gebruiker/verwijderen/{slug}', 'GebruikersController@verwijderen' )->name( 'verwijder.gebruiker' );
+		SimpleRouter::post( '/gebruiker/accepteer/{slug}', 'GebruikersController@accepteren' )->name( 'accepteer.gebruiker' );
+		SimpleRouter::post( '/gebruiker/blokeer/{slug}', 'GebruikersController@blokeer')->name( 'blokeer.gebruiker' );
 	});
 
 	SimpleRouter::group(['prefix' => '/ingelogd', 'middleware' => IsAuthenticated::class], function(){

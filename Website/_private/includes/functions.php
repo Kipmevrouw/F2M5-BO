@@ -244,6 +244,21 @@ function deleteUser($selectedUserId){
 	$statement = $connection->prepare( $sql );
 	$statement->execute([ 'id' => $selectedUserId ]);
 
-	$home_url = url('admin.gebruikers');
-	redirect($home_url);
+}
+
+function acceptUser($selectedUserId){
+
+	$connection = dbConnect();
+	$sql		= "UPDATE `users` SET `active` = '1' WHERE `users`.`id` = :id";
+	$statement 	= $connection->prepare( $sql );
+	$statement->execute([ 'id' => $selectedUserId ]);
+
+}
+
+function blockUser($selectedUserId){
+
+	$connection = dbConnect();
+	$sql		= "UPDATE `users` SET `active` = '0' WHERE `users`.`id` = :id";
+	$statement	= $connection->prepare( $sql );
+	$statement->execute(['id' => $selectedUserId]);
 }
