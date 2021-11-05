@@ -17,4 +17,37 @@ class GebruikersController{
 
     }
 
+    public function verwijderen($slug){
+
+        $account = getUserAccount($slug);
+        
+        deleteUser($slug);
+
+        $home_url = url('admin.gebruikers');
+	    redirect($home_url);
+
+    }
+
+    public function accepteren($slug){
+
+        $account = getUserAccount($slug);
+
+        acceptUser($slug);
+
+        $home_url = url('admin.gebruikers');
+	    redirect($home_url);
+
+    }
+
+    public function blokeer($slug){
+
+        $account = getUserAccount($slug);
+
+        blockUser($slug);
+
+        $home_url = url('admin.gebruikers');
+        redirect($home_url);
+
+    }
+
 }
