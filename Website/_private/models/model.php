@@ -10,6 +10,15 @@ function getUsers() {
 	return $statement->fetchAll();
 }
 
+function getAllTopics(){
+
+	$connection = dbConnect();
+	$sql = 'SELECT * FROM `topics`';
+	$statement = $connection->query($sql);
+
+	return $statement->fetchALL();
+}
+
 function getUserByEmail($email){
 
 	$connection = dbConnect();

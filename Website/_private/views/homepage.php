@@ -25,21 +25,21 @@
         </div>
         <div class="carousel-inner" style="border-radius: 12px;">
             <div class="carousel-item active">
-            <img src="images/lisa.png" class="d-block w-100" alt="...">
+            <img src="<?php echo site_url("/images/lisa.png")?>" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             <h5>Lisa (24 jaar):</h5>
             <p>Ik kan mij zo gemakkelijk aanpassen aan anderen, dat ik mijzelf op een gegeven moment kwijt was geraakt.</p>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="images/elwin.png" class="d-block w-100" alt="...">
+            <img src="<?php echo site_url("/images/elwin.png")?>" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             <h5>Elwin (29 jaar):</h5>
             <p>Ik ben opgegroeid met de overtuiging dat wat ik vond er toch niet toe deed, maar ook dat wat ik voelde niet gehoord hoefde te worden.</p>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="images/yasmine foto.png" class="d-block w-100" alt="...">
+            <img src="<?php echo site_url("/images/yasmine-foto.png")?>" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             <h5>Yasmine (22 jaar):</h5>
             <p>Ik heb gewoon bijna het gevoel dat het niet meer oké is om eerst jezelf op nummer één te zetten.</p>

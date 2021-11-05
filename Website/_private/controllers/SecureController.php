@@ -10,5 +10,11 @@ class SecureController{
         echo $template_engine->render( 'securepage' ); 
 
     }
+    public function savecomment(){
+        $comment = input("comment");
+        echo $comment;
+
+    }
 
 }
+

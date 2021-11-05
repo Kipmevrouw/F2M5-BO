@@ -34,7 +34,6 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::get( '/logout', 'LoginController@logout' )->name( 'logout' );
 
 	
-
 	SimpleRouter::group(['prefix' => '/admin', 'middleware' => IsSuperAdmin::class], function(){
 		SimpleRouter::get( '/', 'AdminController@admin' )->name( 'admin' );
 		SimpleRouter::get( '/feed', 'AdminController@feed' )->name( 'admin.feed' );
@@ -45,6 +44,7 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::group(['prefix' => '/ingelogd', 'middleware' => IsAuthenticated::class], function(){
 		SimpleRouter::get( '/', 'SecureController@secure' )->name( 'secure' );
 		SimpleRouter::get( '/dashboard', 'LoginController@userDashboard' )->name( 'login.dashboard' );
+		SimpleRouter::post( '/comments/save', 'SecureController@saveComment' )->name( 'comments.save' );
 	});
 
 	

@@ -21,7 +21,7 @@
 <div>
     <header>
         <div class="item1">
-            <img src="<?php echo site_url("/images/logo letters.png")?>">
+            <img src="<?php echo site_url("/images/logo-letters.png")?>">
         </div>
         <div class="item item2">
             <nav>
