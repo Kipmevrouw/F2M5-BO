@@ -1,0 +1,40 @@
+.gebruiker_container{
+    display: grid;
+    justify-content: center;
+    
+}
+
+.gebruiker_border{
+    margin: 10px;
+    padding: 10px;
+}
+
+.gebruikers_buttons_container{
+    display: flex;
+    justify-content: center;
+}
+
+.gebruikers_buttons{
+    background-color: rgb(254, 78, 2);
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 0px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.gebruikers_buttons:hover{
+    text-decoration: underline;
+}
+
+#verwijderen:hover{
+    background-color:red;
+    transition: 0.75s;
+}
+
+#accepteer:hover{
+    background-color:rgb(26, 173, 26);
+    transition: 0.75s;
+}
