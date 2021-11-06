@@ -262,3 +262,11 @@ function blockUser($selectedUserId){
 	$statement	= $connection->prepare( $sql );
 	$statement->execute(['id' => $selectedUserId]);
 }
+
+function getBlogPost(){
+
+	$connection = dbConnect();
+	$sql 		= "SELECT * FROM `data`";
+	$statement	= $connection->prepare( $sql );
+	return $statement->execute();
+}

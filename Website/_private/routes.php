@@ -48,7 +48,7 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::group(['prefix' => '/ingelogd', 'middleware' => IsAuthenticated::class], function(){
 		SimpleRouter::get( '/', 'SecureController@secure' )->name( 'secure' );
 		SimpleRouter::get( '/dashboard', 'LoginController@userDashboard' )->name( 'login.dashboard' );
-		SimpleRouter::post( '/comments/save', 'SecureController@saveComment' )->name( 'comments.save' );
+		SimpleRouter::post( '/comments/save', 'BlogController@saveComment' )->name( 'comments.save' );
 	});
 
 	

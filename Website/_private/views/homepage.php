@@ -39,7 +39,7 @@
             </div>
             </div>
             <div class="carousel-item">
-            <img src="<?php echo site_url("/images/yasmine-foto.png")?>" class="d-block w-100" alt="...">
+            <img src="<?php echo site_url("../images/yasmine-foto.png")?>" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             <h5>Yasmine (22 jaar):</h5>
             <p>Ik heb gewoon bijna het gevoel dat het niet meer oké is om eerst jezelf op nummer één te zetten.</p>

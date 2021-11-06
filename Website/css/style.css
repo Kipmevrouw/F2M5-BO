@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-
+body{
+    background-color: rgba(244, 250, 255);
+}
 main {
-    background: #fff;
+    background-color: rgba(244, 250, 255);
 }
 
 header {

@@ -56,7 +56,7 @@ class LoginController {
         loginCheck();
 
         $template_engine = get_template_engine();
-        echo $template_engine->render( 'user_dashboard' );
+        echo $template_engine->render( 'user_dashboard', ['user' => request()->user] );
 
     }
 

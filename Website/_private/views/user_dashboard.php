@@ -1,11 +1,29 @@
 <?php $this->layout('layouts::website');?>
-<div class="Dashboard">
+<div class="container" style="background: rgba(244, 250, 255);">
     <div class="form-floating">
-        <form action="<?php echo url('comments.save')?>" method ="POST" class ="form">
-        <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px width: auto;"></textarea>
-        <label for="floatingTextarea2">Comments</label>
-        <button type="submit" class="btn btn-success" style="text-align: center;">Plaatsen</button>
+        <form action="<?php echo url('comments.save')?>" method ="POST" >
+        <input type="text" name="title" placeholder="Blog Title" class="form-control text-dark my-3 text-center">
+        <textarea name="content" class="form-control text-dark my-3 text-center" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 50px width: auto;"></textarea>
+        <button type="submit" name="new_post" class="btn btn-success text-center" style="text-align: center;">Plaatsen</button>
         </form>
     </div>
-
+    <div class="row">
+        <?php
+        $connection = dbConnect();
+        $sql        = "SELECT * FROM data";
+        $statement  = $connection->query( $sql );
+        $query     = $statement->fetchAll();
+        ?>
+        <?php foreach($query as $q):?>
+            <div class="col-6 d-flex justify-content align-items-center">
+                <div class="card text-white bg-secondary mt-5">
+                    <div class="card-body" style="width: 18rem;">
+                        <h5 class="card-title"><?php echo $q['title'];?></h5>
+                        <p class="card-text"><?php echo $q['content'];?></p>
+                        <p class="card-text"><?php echo	$q['user']?></p>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach;?>
+    </div>
 </div>
