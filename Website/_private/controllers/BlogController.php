@@ -5,7 +5,7 @@ namespace Website\Controllers;
 class BlogController{
     public function savecomment(){
 
-        $conn = mysqli_connect("localhost", "root", "", "transformers" );
+        $conn = mysqli_connect("localhost", "root", "", "transformers_community" );
 
 
 

@@ -38,6 +38,7 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::group(['prefix' => '/admin', 'middleware' => IsSuperAdmin::class], function(){
 		SimpleRouter::get( '/', 'AdminController@admin' )->name( 'admin' );
 		SimpleRouter::get( '/feed', 'AdminController@feed' )->name( 'admin.feed' );
+		SimpleRouter::post( '/feed/savecomment', 'AdminController@saveAdminComment' )->name( 'admin.savecomment' );
 		SimpleRouter::get( '/gebruikers', 'GebruikersController@users' )->name( 'admin.gebruikers' );
 		SimpleRouter::get( '/gebruiker/{slug}', 'GebruikersController@showUsers' )->name( 'gebruiker.show' );
 		SimpleRouter::post( '/gebruiker/verwijderen/{slug}', 'GebruikersController@verwijderen' )->name( 'verwijder.gebruiker' );

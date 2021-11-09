@@ -1,7 +1,7 @@
-<?php $this->layout('layouts::website');?>
+<?php $this->layout('layouts::adminwebsite');?>
 <div class="container" style="background: rgba(244, 250, 255);">
     <div class="form-floating">
-        <form action="<?php echo url('comments.save')?>" method ="POST" >
+        <form action="<?php echo url('admin.savecomment')?>" method ="POST" >
         <input type="text" name="title" placeholder="Blog Title" class="form-control text-dark my-3 text-center">
         <textarea name="content" class="form-control text-dark my-3 text-center" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 50px width auto"></textarea>
         <button type="submit" name="new_post" class="btn btn-success text-center" style="text-align: center;">Plaatsen</button>

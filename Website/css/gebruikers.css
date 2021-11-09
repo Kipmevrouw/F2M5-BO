@@ -9,6 +9,13 @@
     padding: 10px;
 }
 
+.gebruiker{
+   font-size: 30px;
+   text-decoration: none;
+   color: rgb(86, 38, 202);
+   font-weight: bold;
+}
+
 .gebruikers_buttons_container{
     display: flex;
     justify-content: center;
